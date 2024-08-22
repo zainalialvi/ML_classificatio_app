@@ -1,7 +1,7 @@
 import streamlit as st
 import joblib
-
-model = joblib.load('text_classifier_model.pkl')
+print(!pip show scikit-learn , "\n\n")
+model = joblib.load('./text_classifier_model.pkl')
 vectorizer = joblib.load('vectorizer.pkl')
 
 st.title("Text Prediction App")
