@@ -29,5 +29,5 @@ try:
             st.write(f"Label: {label_map.get(prediction, 'Unknown')}")
         else:
             st.write("Please enter some text to classify.")
-except:
-    st.write("some error")
+except Exception as e:
+    st.write("some error \n", e)
