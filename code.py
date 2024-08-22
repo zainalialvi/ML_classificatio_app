@@ -1,9 +1,6 @@
 import streamlit as st
 import joblib
-import subprocess
 
-# Check if scikit-learn is installed and print its details
-subprocess.run(["pip", "show", "scikit-learn"])
 try:
     model = joblib.load('./text_classifier_model.pkl')
     vectorizer = joblib.load('vectorizer.pkl')
